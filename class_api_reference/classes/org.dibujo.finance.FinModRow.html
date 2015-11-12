@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    Financial Module for Svarog &raquo; \org\dibujo\finance\FinModRow
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">Financial Module for Svarog</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/org.html">org</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: A Constructor">
+            <span class="description">A Constructor</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getAttrs" title="getAttrs :: Returns an array with fields">
+            <span class="description">Returns an array with fields</span><pre>getAttrs</pre>
+        </a>
+    </li>
+
+                                                                                                        </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                    <li class="method protected">
+                            <a href="#method_isInAttrs" title="isInAttrs :: Check if the $val is in attributes">
+                                <span class="description">Check if the $val is in attributes</span><pre>isInAttrs</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                        </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>FinModRow</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Describes the row with exact data-fields</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>PandaHugMonster <a href="mailto:poni@dibujo.ru">poni@dibujo.ru</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        version
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>FinModRow:0.0.1</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>A Constructor</h2>
+                            <pre>__construct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getAttrs"></a>
+                        <div class="element clickable method public  method_getAttrs" data-toggle="collapse" data-target=".method_getAttrs .collapse">
+                            <h2>Returns an array with fields</h2>
+                            <pre>getAttrs() : array</pre>
+                            <div class="labels">
+                                                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>array</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_isInAttrs"></a>
+                        <div class="element clickable method protected  method_isInAttrs" data-toggle="collapse" data-target=".method_isInAttrs .collapse">
+                            <h2>Check if the $val is in attributes</h2>
+                            <pre>isInAttrs(mixed $val) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$val</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_attributes"> </a>
+                            <div class="element clickable property  private property_attributes" data-toggle="collapse" data-target=".property_attributes .collapse">
+                                <h2>Contain raw data in array (fields $key =&gt; $val)</h2>
+                                <pre>attributes : array</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_internalId"> </a>
+                            <div class="element clickable property  public property_internalId" data-toggle="collapse" data-target=".property_internalId .collapse">
+                                <h2>internalId</h2>
+                                <pre>internalId : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_externalId"> </a>
+                            <div class="element clickable property  public property_externalId" data-toggle="collapse" data-target=".property_externalId .collapse">
+                                <h2>externalId</h2>
+                                <pre>externalId : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_extraExternalId"> </a>
+                            <div class="element clickable property  public property_extraExternalId" data-toggle="collapse" data-target=".property_extraExternalId .collapse">
+                                <h2>extraExternalId</h2>
+                                <pre>extraExternalId : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_docDate"> </a>
+                            <div class="element clickable property  public property_docDate" data-toggle="collapse" data-target=".property_docDate .collapse">
+                                <h2>docDate</h2>
+                                <pre>docDate : \org\dibujo\finance\date</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\org\dibujo\finance\date</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_docSum"> </a>
+                            <div class="element clickable property  public property_docSum" data-toggle="collapse" data-target=".property_docSum .collapse">
+                                <h2>docSum</h2>
+                                <pre>docSum : double</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>double</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_processDate"> </a>
+                            <div class="element clickable property  public property_processDate" data-toggle="collapse" data-target=".property_processDate .collapse">
+                                <h2>processDate</h2>
+                                <pre>processDate : \org\dibujo\finance\date</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\org\dibujo\finance\date</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromAcc"> </a>
+                            <div class="element clickable property  public property_fromAcc" data-toggle="collapse" data-target=".property_fromAcc .collapse">
+                                <h2>fromAcc</h2>
+                                <pre>fromAcc : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toAcc"> </a>
+                            <div class="element clickable property  public property_toAcc" data-toggle="collapse" data-target=".property_toAcc .collapse">
+                                <h2>toAcc</h2>
+                                <pre>toAcc : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromBank"> </a>
+                            <div class="element clickable property  public property_fromBank" data-toggle="collapse" data-target=".property_fromBank .collapse">
+                                <h2>fromBank</h2>
+                                <pre>fromBank : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toBank"> </a>
+                            <div class="element clickable property  public property_toBank" data-toggle="collapse" data-target=".property_toBank .collapse">
+                                <h2>toBank</h2>
+                                <pre>toBank : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromBic"> </a>
+                            <div class="element clickable property  public property_fromBic" data-toggle="collapse" data-target=".property_fromBic .collapse">
+                                <h2>fromBic</h2>
+                                <pre>fromBic : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toBic"> </a>
+                            <div class="element clickable property  public property_toBic" data-toggle="collapse" data-target=".property_toBic .collapse">
+                                <h2>toBic</h2>
+                                <pre>toBic : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toCorrAcc"> </a>
+                            <div class="element clickable property  public property_toCorrAcc" data-toggle="collapse" data-target=".property_toCorrAcc .collapse">
+                                <h2>toCorrAcc</h2>
+                                <pre>toCorrAcc : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromCorrAcc"> </a>
+                            <div class="element clickable property  public property_fromCorrAcc" data-toggle="collapse" data-target=".property_fromCorrAcc .collapse">
+                                <h2>fromCorrAcc</h2>
+                                <pre>fromCorrAcc : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toINN"> </a>
+                            <div class="element clickable property  public property_toINN" data-toggle="collapse" data-target=".property_toINN .collapse">
+                                <h2>toINN</h2>
+                                <pre>toINN : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromINN"> </a>
+                            <div class="element clickable property  public property_fromINN" data-toggle="collapse" data-target=".property_fromINN .collapse">
+                                <h2>fromINN</h2>
+                                <pre>fromINN : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toKPP"> </a>
+                            <div class="element clickable property  public property_toKPP" data-toggle="collapse" data-target=".property_toKPP .collapse">
+                                <h2>toKPP</h2>
+                                <pre>toKPP : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromKPP"> </a>
+                            <div class="element clickable property  public property_fromKPP" data-toggle="collapse" data-target=".property_fromKPP .collapse">
+                                <h2>fromKPP</h2>
+                                <pre>fromKPP : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_paymentOrder"> </a>
+                            <div class="element clickable property  public property_paymentOrder" data-toggle="collapse" data-target=".property_paymentOrder .collapse">
+                                <h2>paymentOrder</h2>
+                                <pre>paymentOrder : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_fromCurrCode"> </a>
+                            <div class="element clickable property  public property_fromCurrCode" data-toggle="collapse" data-target=".property_fromCurrCode .collapse">
+                                <h2>fromCurrCode</h2>
+                                <pre>fromCurrCode : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_toCurrCode"> </a>
+                            <div class="element clickable property  public property_toCurrCode" data-toggle="collapse" data-target=".property_toCurrCode .collapse">
+                                <h2>toCurrCode</h2>
+                                <pre>toCurrCode : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_from"> </a>
+                            <div class="element clickable property  public property_from" data-toggle="collapse" data-target=".property_from .collapse">
+                                <h2>from</h2>
+                                <pre>from : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_purpose"> </a>
+                            <div class="element clickable property  public property_purpose" data-toggle="collapse" data-target=".property_purpose .collapse">
+                                <h2>purpose</h2>
+                                <pre>purpose : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depCbc"> </a>
+                            <div class="element clickable property  public property_depCbc" data-toggle="collapse" data-target=".property_depCbc .collapse">
+                                <h2>depCbc</h2>
+                                <pre>depCbc : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depDocDate"> </a>
+                            <div class="element clickable property  public property_depDocDate" data-toggle="collapse" data-target=".property_depDocDate .collapse">
+                                <h2>depDocDate</h2>
+                                <pre>depDocDate : \org\dibujo\finance\date</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\org\dibujo\finance\date</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depDrawerStatus"> </a>
+                            <div class="element clickable property  public property_depDrawerStatus" data-toggle="collapse" data-target=".property_depDrawerStatus .collapse">
+                                <h2>depDrawerStatus</h2>
+                                <pre>depDrawerStatus : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depOkato"> </a>
+                            <div class="element clickable property  public property_depOkato" data-toggle="collapse" data-target=".property_depOkato .collapse">
+                                <h2>depOkato</h2>
+                                <pre>depOkato : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depPaymentTypeReason"> </a>
+                            <div class="element clickable property  public property_depPaymentTypeReason" data-toggle="collapse" data-target=".property_depPaymentTypeReason .collapse">
+                                <h2>depPaymentTypeReason</h2>
+                                <pre>depPaymentTypeReason : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depPaymentTypeKind"> </a>
+                            <div class="element clickable property  public property_depPaymentTypeKind" data-toggle="collapse" data-target=".property_depPaymentTypeKind .collapse">
+                                <h2>depPaymentTypeKind</h2>
+                                <pre>depPaymentTypeKind : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depTaxPeriod"> </a>
+                            <div class="element clickable property  public property_depTaxPeriod" data-toggle="collapse" data-target=".property_depTaxPeriod .collapse">
+                                <h2>depTaxPeriod</h2>
+                                <pre>depTaxPeriod : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_depDocNo"> </a>
+                            <div class="element clickable property  public property_depDocNo" data-toggle="collapse" data-target=".property_depDocNo .collapse">
+                                <h2>depDocNo</h2>
+                                <pre>depDocNo : integer</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>integer</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\org\dibujo\finance\FinModRow"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/org.dibujo.finance.html">finance</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/org.dibujo.finance.FinModRow.html">FinModRow</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 19 Oct 2014 05:05:10 +0400.<br/>
+    </footer>
+    </body>
+</html>
